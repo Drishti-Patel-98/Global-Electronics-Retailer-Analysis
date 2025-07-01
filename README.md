@@ -12,8 +12,8 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 ├── Output/
 |   ├── Global_Electronics_Retailer_Report.pdf
 ├── Global Electronics Retailer Analysis.py
-├── Insights and Recommendations.docx
-├── Requirements.docx
+├── Insights and Recommendations.pdf
+├── Requirements.pdf
 └── README.md
 ```
 
@@ -28,4 +28,4 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 
 
 ## Insights and Recommendations:
-[View Insights and Recommendations](Insights%20and%20Recommendations.docx)
+[View Insights and Recommendations](Insights%20and%20Recommendations.pdf)
