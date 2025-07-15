@@ -17,6 +17,8 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 │   ├── Analyze.py
 ├── Output/
 |   ├── Global_Electronics_Retailer_Report.pdf
+├── dags/
+|   ├── ETL_DAG.py
 ├── Global Electronics Retailer Analysis.py -- This script is no longer in use as modularized scripts are available in the ETL folder
 ├── Insights and Recommendations.pdf
 ├── Requirements.pdf
