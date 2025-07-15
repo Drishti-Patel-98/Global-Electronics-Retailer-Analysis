@@ -11,7 +11,7 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 │   └── Exchange_Rates.csv
 ├── Output/
 |   ├── Global_Electronics_Retailer_Report.pdf
-├── Global Electronics Retailer Analysis.py
+├── Global Electronics Retailer Analysis.py -- This script is no longer in use as modularized scripts are available in the ETL folder
 ├── Insights and Recommendations.pdf
 ├── Requirements.pdf
 └── README.md
