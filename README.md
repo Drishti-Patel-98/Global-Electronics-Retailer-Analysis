@@ -9,6 +9,12 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 │   ├── Sales.csv
 │   ├── Stores.csv
 │   └── Exchange_Rates.csv
+├── ETL/
+│   ├── tmp/    -- This folder contains all pickle files created during the CTL process
+│   ├── Load.py
+│   ├── Clean.py
+│   ├── Combine.py
+│   ├── Analyze.py
 ├── Output/
 |   ├── Global_Electronics_Retailer_Report.pdf
 ├── Global Electronics Retailer Analysis.py -- This script is no longer in use as modularized scripts are available in the ETL folder
