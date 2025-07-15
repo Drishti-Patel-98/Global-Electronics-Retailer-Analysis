@@ -22,6 +22,7 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 - Data Merging: Combines customer, sales, product, store, and exchange rate data.
 - Exploratory Analysis: Visualizes sales trends, product performance, store metrics, customer demographics, and delivery timelines.
 - PDF Report Generation: Automatically generates a well-formatted report with charts and section titles.
+- Daily scheduling using Apache Airflow.
 
 ## Output:
 [View Output](Output/Global_Electronics_Retailer_Report.pdf)
