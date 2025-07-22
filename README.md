@@ -1,6 +1,9 @@
 ## Project Overview:
 Global Electronics Retailer Analysis is a Python-based data pipeline designed to clean, integrate, analyze, and visualize data from a multinational electronics retail business. The final output is an automated PDF report (Global_Electronics_Retailer_Report.pdf) that includes visualizations for decision-makers.
 
+## Tech Stake:
+Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
+
 ## Project Structure:
 ```
 ├── Data/
@@ -10,7 +13,7 @@ Global Electronics Retailer Analysis is a Python-based data pipeline designed to
 │   ├── Stores.csv
 │   └── Exchange_Rates.csv
 ├── ETL/
-│   ├── tmp/    -- This folder contains all pickle files created during the CTL process
+│   ├── tmp/    -- This folder contains all pickle files created during the ETL process
 │   ├── Load.py
 │   ├── Clean.py
 │   ├── Combine.py
