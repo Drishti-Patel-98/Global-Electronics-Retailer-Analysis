@@ -27,22 +27,8 @@ The analysis uses five datasets:
 | Stores         | Regional comparision               |
 | Exchange Rates | Currency normalization             |
 
-## Diagram:
-```mermaid
-A[Raw Data (CSV Files)\nCustomers.csv\nProducts.csv\nSales.csv\nStores.csv\nExchange_Rates.csv]
-B[Data Ingestion & Validation\nLoad.py]
-C[Data Cleaning & Preparation\nClean.py]
-D[Data Integration & Modeling\nCombine.py]
-E[Exploratory Data Analysis\nAnalyze.py]
-F[Automated Business Reporting\nGlobal_Electronics_Retailer_Report.pdf]
-
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-
 ## Flow Diagram:
+```mermaid
 ┌─────────────────────────────────────────────┐
 │                Raw Data                     │
 |               (CSV Files)                   |
@@ -101,6 +87,8 @@ E --> F
 │  Global_Electronics_Retailer_Report.pdf     │
 |  - PDF with charts and insighs              |
 └───────────────────────┬─────────────────────┘
+
+```
 
 ## Project Structure:
 ```
