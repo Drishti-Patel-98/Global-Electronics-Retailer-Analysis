@@ -1,5 +1,5 @@
 ## Project Overview:
-Global Electronics Retailer Analysis project aims to deliver automatic business analytics solution that provides leadrship with timely, accurate, and actionable insights into sales, customer behavior, product performance, and operational efficiency across a multinational retail organization.
+The Global Electronics Retailer Analysis project delivers an automated analytics solution that provides leadership with timely, accurate, and actionable insights into sales, customer behavior, product performance, and operational efficiency across a multinational electronics retail business.
 
 ## Business Problem:
 Business stakeholders currently rely on manual and fragmented reporting, resulting in:
@@ -26,6 +26,13 @@ The analysis uses five datasets:
 | products       | Product category preformance       |
 | Stores         | Regional comparision               |
 | Exchange Rates | Currency normalization             |
+
+## Key Metrics / KPIs:
+- Total Revenue & Sales Volume
+- Revenue by Region & Store
+- Product Category Contribution
+- High-Value Customer Segments
+- Average Delivery Time
 
 ## Flow Diagram:
 ```
