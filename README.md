@@ -29,6 +29,13 @@ The analysis uses five datasets:
 
 ## Flow Diagram:
 ```mermaid
+flowchart TD
+A[Raw Data (CSV Files)<br>Customers.csv, Products.csv, Sales.csv, Stores.csv, Exchange_Rates.csv] --> B[Data Ingestion & Validation<br>Load.py: Read CSV, Validate schema & types]
+B --> C[Data Cleaning & Preparation<br>Clean.py: Handle nulls, Standardize, Remove duplicates]
+C --> D[Data Integration & Modeling<br>Combine.py: Merge datasets, Currency normalization, Derived metrics]
+D --> E[Exploratory Data Analysis (EDA)<br>Analyze.py: Sales trends, Product & store insights, Customer behavior, Delivery metrics]
+E --> F[Automated Business Reporting<br>Global_Electronics_Retailer_Report.pdf: Charts & insights]
+```
 ┌─────────────────────────────────────────────┐
 │                Raw Data                     │
 |               (CSV Files)                   |
@@ -87,8 +94,6 @@ The analysis uses five datasets:
 │  Global_Electronics_Retailer_Report.pdf     │
 |  - PDF with charts and insighs              |
 └───────────────────────┬─────────────────────┘
-
-```
 
 ## Project Structure:
 ```
