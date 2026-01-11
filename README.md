@@ -28,7 +28,7 @@ The analysis uses five datasets:
 | Exchange Rates | Currency normalization             |
 
 ## Diagram:
-flowchart TD
+```mermaid
 A[Raw Data (CSV Files)\nCustomers.csv\nProducts.csv\nSales.csv\nStores.csv\nExchange_Rates.csv]
 B[Data Ingestion & Validation\nLoad.py]
 C[Data Cleaning & Preparation\nClean.py]
