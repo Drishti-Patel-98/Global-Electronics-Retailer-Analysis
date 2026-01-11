@@ -27,6 +27,21 @@ The analysis uses five datasets:
 | Stores         | Regional comparision               |
 | Exchange Rates | Currency normalization             |
 
+## Diagram:
+flowchart TD
+
+A[Raw Data<br/>(CSV Files)<br/><br/>Customers.csv<br/>Products.csv<br/>Sales.csv<br/>Stores.csv<br/>Exchange_Rates.csv] 
+--> |Daily| B[Data Ingestion & Validation<br/><br/>Load.py<br/>• Read CSV files<br/>• Validate schema & data types]
+
+B --> |Daily| C[Data Cleaning & Preparation<br/><br/>Clean.py<br/>• Handle missing/null values<br/>• Standardize formats<br/>• Remove duplicates]
+
+C --> |Daily| D[Data Integration & Modeling<br/><br/>Combine.py<br/>• Merge customers, sales, products<br/>• Join store & exchange rate data<br/>• Currency normalization<br/>• Derived business metrics]
+
+D --> |Daily| E[Exploratory Data Analysis (EDA)<br/><br/>Analyze.py<br/>• Sales & revenue trends<br/>• Product & category performance<br/>• Store & regional insights<br/>• Customer behavior analysis<br/>• Delivery timeline metrics]
+
+E --> |Daily| F[Automated Business Reporting<br/><br/>Global_Electronics_Retailer_Report.pdf<br/>• Charts<br/>• KPIs<br/>• Business insights]
+
+
 ## Flow Diagram:
 ┌─────────────────────────────────────────────┐
 │                Raw Data                     │
