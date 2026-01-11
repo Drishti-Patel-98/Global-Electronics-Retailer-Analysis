@@ -1,8 +1,33 @@
 ## Project Overview:
-Global Electronics Retailer Analysis is a Python-based data pipeline designed to clean, integrate, analyze, and visualize data from a multinational electronics retail business. The final output is an automated PDF report (Global_Electronics_Retailer_Report.pdf) that includes visualizations for decision-makers.
+Global Electronics Retailer Analysis project aims to deliver automatic business analytics solution that provides leadrship with timely, accurate, and actionable insights into sales, customer behavior, product performance, and operational efficiency across a multinational retail organization.
 
-## Tech Stake:
-Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
+## Business Problem:
+Business stakeholders currently rely on manual and fragmented reporting, resulting in:
+- Delayed insights
+- Inconsistent data interpretation
+- Limited visibility into performance drivers
+- Inefficient decision-making
+
+There is no centralized reporting mechanism that integrates customer, sales, product, store, and exchange rate data.
+
+## Business Objectives:
+The objective of this project was to:
+- Consolidate business data into a unified analytical dataset
+- Deliver clear, visual insights for non-technical stakeholders
+- Automate reporting to support recurring business reviews
+- Enable data-driven decisions across sales, marketing, and operations
+
+## Dataset overview:
+The analysis uses five datasets:
+| Dataset        | Purpose                            |
+|:---------------|-----------------------------------:|
+| Sales          | Revenue and volume analysis        |
+| Customers      | Demographics and behavior insights |
+| products       | Product category preformance       |
+| Stores         | Regional comparision               |
+| Exchange Rates | Currency normalization             |
+
+## Flow Diagram:
 
 ## Project Structure:
 ```
@@ -27,6 +52,8 @@ Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
 ├── Requirements.pdf
 └── README.md
 ```
+## Tech Stake:
+Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
 
 ## Key Features:
 - Data Cleaning: Handles inconsistent data types, missing values, and nulls.
