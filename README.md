@@ -28,6 +28,64 @@ The analysis uses five datasets:
 | Exchange Rates | Currency normalization             |
 
 ## Flow Diagram:
+┌─────────────────────────────────────────────┐
+│                Raw Data                     │
+|               (CSV Files)                   |
+│                                             │
+│  Customers.csv  Products.csv                │
+│  Sales.csv      Stores.csv                  │
+│  Exchange_Rates.csv                         │
+└───────────────────────┬─────────────────────┘
+                        │ Frequency: Daily
+                        ▼
+┌─────────────────────────────────────────────┐
+│           Data Ingestion & Validation       │
+│                                             │
+│  Load.py                                    │
+│  - Read CSV files                           │
+│  - Validate schema & data types             │
+└───────────────────────┬─────────────────────┘
+                        │ Frequency: Daily
+                        ▼
+┌─────────────────────────────────────────────┐
+│        Data Cleaning & Preparation          │
+│                                             │
+│  Clean.py                                   │
+│  - Handle missing & null values             │
+│  - Standardize data formats                 │
+│  - Remove duplicates                        │
+└───────────────────────┬─────────────────────┘
+                        │ Frequency: Daily
+                        ▼
+┌─────────────────────────────────────────────┐
+│           Data Integration & Modeling       │
+│                                             │
+│  Combine.py                                 │
+│  - Merge customers, sales, products         │
+│  - Join store & exchange rate data          │
+│  - Currency normalization                   │
+│  - Derived business metrics                 │
+└───────────────────────┬─────────────────────┘
+                        │ Frequency: Daily
+                        ▼
+┌─────────────────────────────────────────────┐
+│        Exploratory Data Analysis (EDA)      │
+│                                             │
+│  Analyze.py                                 │
+│  - Sales & revenue trends                   │
+│  - Product & category performance           │
+│  - Store & regional insights                │
+│  - Customer behavior analysis               │
+│  - Delivery timeline metrics                │
+└───────────────────────┬─────────────────────┘
+                        │ Frequency: Daily
+                        ▼
+┌─────────────────────────────────────────────┐
+│          Automated Business Reporting       │
+│                                             │
+│  Global_Electronics_Retailer_Report.pdf     │
+|  - PDF with charts and insighs              |
+└───────────────────────┬─────────────────────┘
 
 ## Project Structure:
 ```
@@ -52,6 +110,7 @@ The analysis uses five datasets:
 ├── Requirements.pdf
 └── README.md
 ```
+
 ## Tech Stake:
 Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
 
