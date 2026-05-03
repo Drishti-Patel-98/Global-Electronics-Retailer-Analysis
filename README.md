@@ -121,7 +121,7 @@ The analysis uses five datasets:
 └── README.md
 ```
 
-## Tech Stake:
+## Tech Stack:
 Python (Pandas, NumPy, Matplotlib, Seaborn) | ETL | Apache Airflow
 
 ## Key Features:
